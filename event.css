@@ -1,0 +1,70 @@
+
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: poppins,sans-serif;
+}
+:root{
+  --blue:#1862CD;
+  --myBlack:#333333;
+  --black2:#242424;
+}
+html{
+  scroll-behavior: smooth;
+}
+h1{
+    text-align: center;
+    font-weight: 600;
+    color: var(--myBlack);
+    padding-top: 50px;
+}
+.event{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    padding-bottom: 100px;
+  }
+  .event h2{
+    margin-left: 0%;
+    margin-bottom: 20px;
+  }
+  .eventin{
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+  }
+  .event-content{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: .01px .01px 5px .01px #cecece;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+  .event-content img{
+    width: 100%;
+    transition: 0.8s;
+    height: auto;
+  }
+  
+  .event-content:hover img{
+    transform: scale(1.05);
+    /* z-index: 0; */
+  }
+  .event-content .date{
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    text-align: left;
+    margin: 20px;
+  }
+  .event-content .detail{
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }

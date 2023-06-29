@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+    box-sizing: border-box;
+  }
+  
+#about {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+#about h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.875rem;
+    color: #2c2c2c;
+}
+#about p {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.8;
+  }
+  .about-box p {
+    text-align: justify;
+    color: #666;
+  }
+  .about-box h3{
+    color: #2c2c2c;
+  }
+
+  #overview {
+    background-color: #f6f9fc;
+}
+#overviewin{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+#overviewin h1 {
+    text-align: center;
+    color: #2c2c2c;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+.overview-base {
+    display: grid;
+    grid-template-columns: repeat(3,50fr);
+    gap: 20px;
+    margin-bottom: 100px;
+}
+.overview-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: .01px .01px 5px .01px #cecece;
+}
+.overview-box h2{
+    color: #444444;
+}
+.overview-box a{
+    text-decoration: none;
+    color: #3f3f3f;
+}
+.overview-box p{
+    color: #3f3f3f;
+}
+#origin {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.origin-base{
+    display: grid;
+    /* grid-template-columns: repeat(2,50fr); */
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+.origin-grid{
+    display: flex;
+}
+.origin-grid img{
+    width: auto;
+    height: 40px;
+    margin-right: 10px;
+}
+.origin-grid img:hover{
+    cursor: pointer;
+    opacity: .78;
+}
+.origin-box{
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: .01px .01px 5px .01px #cecece;
+    padding-bottom: 100px;
+}
+.origin-box h2{
+    color: #3f3f3f;
+    margin-bottom: 30px;
+}
+.origin-box p{
+    color:#4e4e4e;
+    text-align: justify;
+}

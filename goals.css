@@ -1,0 +1,170 @@
+/* Global Styles */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Goal Section */
+  #goal {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+  }
+  
+  #goal h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.875rem;
+  }
+  #goal p {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.8;
+  }
+  .goal-base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #goal .goal-box img{
+    height: 100px;
+    display: flex;
+    margin-right:  20px;
+    cursor: pointer;
+    
+  }
+  .goal-box {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #goal .goal-box{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 10px 5px 5px 4px;
+  }
+  .goal-base p1{
+    font-size: 1.55rem;
+    color: #3f3f3f;
+  }
+
+  #goal .goal-basee{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(1100px, 500fr));
+    grid-gap: 3rem;
+    margin-top: 60px;
+  }
+  .goal-box{
+    display: flex;
+  }
+
+  .goal-box h3 {
+    text-align: justify;
+    color: #3f3f3f;
+  }
+  
+  .goal-box p {
+    text-align: justify;
+    color: #666;
+  }
+  #goal h1{
+    color: #3a3a3a;
+  }
+  
+  .goal-box img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  .goal-boxe {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  /* From here the section how we can help you starts */
+  #help {
+    background-color: #f9fbff;
+    margin-top: 5%;
+  }
+  #helpin {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #helpin p{
+    color: #4e4e4e;
+  }
+  #helpin h2,h3{
+    color: #3f3f3f;
+}
+.help-box ul li{
+  color: #333;
+}
+
+
+/* From here the section how we can help students starts */
+
+#eg {
+
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+#eg h3{
+    text-align: center;
+    color: #3f3f3f;
+}
+#eg p{
+  color: #444444;
+}
+  /* Footer Section */
+  .footerarea {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+.eg-boxe ul li{
+    color: #575757;
+}

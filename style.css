@@ -64,21 +64,28 @@
 .home {
   margin: auto;
   width:100%;
-  background-image: url('home-image.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
-.intro h1{
-  color: #944848;
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.col{
+  flex-basis: 100%;
+}
+.col img{
+  width: 100%;
+  margin-top: 20px;
+}
+.col h1{
   text-align: center;
+  line-height: 20px;
 }
-.intro p{
-  margin-top: 30px;
-  color: #d06c6c;
+.col p{
   text-align: center;
+  line-height:30px;
 }
-.intro .intro-p{
+.col .intro-p{
   color: var(--blue);
   text-align: center;
 }

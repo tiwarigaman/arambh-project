@@ -9,7 +9,7 @@
 #about {
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 5%;
+    margin-top: 5%; 
 }
 #about h1{
     text-align: center;
@@ -23,10 +23,12 @@
     font-size: 16px;
     color: #444444;
     line-height: 1.8;
+    flex-wrap: wrap;
   }
   .about-box p {
     text-align: justify;
     color: #666;
+    flex-wrap: wrap;
   }
   .about-box h3{
     color: #2c2c2c;
@@ -69,6 +71,7 @@
 }
 .overview-box p{
     color: #3f3f3f;
+    flex-wrap: wrap;
 }
 #origin {
     margin-left: 5%;
@@ -78,7 +81,7 @@
 .origin-base{
     display: grid;
     /* grid-template-columns: repeat(2,50fr); */
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 50% 50%;
     gap: 20px;
     padding-bottom: 50px;
     margin-bottom: 100px;
@@ -109,4 +112,38 @@
 .origin-box p{
     color:#4e4e4e;
     text-align: justify;
+}
+
+@media only screen and (min-width:200px) and (max-width:767px){
+    
+    h1{
+        font-size: 1.75rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1.55rem;
+    }
+    .overview-base{
+        max-width:98%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .overview-box{
+        width:100%;
+        margin-left: 10px;
+        margin-left: 10px;
+    }
+    .origin-base{
+        max-width: 98%;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
 }

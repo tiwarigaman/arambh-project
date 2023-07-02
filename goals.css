@@ -168,3 +168,10 @@ body {
 .eg-boxe ul li{
     color: #575757;
 }
+
+/* media  */
+
+@media only screen and (min-width:200px) and (max-width:767px){
+
+
+}

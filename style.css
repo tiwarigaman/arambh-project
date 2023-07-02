@@ -80,9 +80,10 @@
 }
 .col h1{
   text-align: center;
-  margin-top: 10px;
-  font-weight: 700;
-  font-size: 30px;
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 55px;
 }
 .col p{
   text-align: center;
@@ -94,7 +95,7 @@
   color: var(--blue);
   text-align: center;
   margin-top: 5px;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
 }
 .event{

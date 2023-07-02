@@ -48,6 +48,9 @@
         flex-wrap: wrap;
         justify-content: center;
       }
+      .event-content{
+        max-width: calc(25%-10px);
+      }
       
     .purpose h2{
         font-size: 1.4rem;
@@ -57,7 +60,6 @@
     }
     .purpose-content p{
         font-size: 1.1rem;
-        flex-wrap: wrap;
     }
     .learn{
         width:auto;
@@ -94,19 +96,18 @@
         gap:30px;
     }
     .purpose-content .qoute{
-        width:5%;
+        width:6%;
     }
     .purpose-content img{
         width:100%;
         height: auto;
     }
     .eventin{
-        margin: 20px;
+        margin-left: 0;
         display: flex;
         flex-wrap: wrap;
       }
 
-    
     .developer-content{
         justify-content: center;
         align-items: center;
@@ -123,18 +124,23 @@
     .home {
         width:100%;
        }
-       home .row .col img{
+       .home .row .col img{
         display: none;
      }
+     .purpose{
+        padding-block: 20px;
+        margin-top:40px;
+        width: 100%;
+     }
     .eventin{
-        margin: 15px;
+        margin-left: 0;
         display: flex;
         flex-wrap: wrap;
+        max-width: calc(100%-10px);
       }
       .developer-content{
         justify-content: center;
         align-items: center;
-        flex-grow: 1;
     }
 
     .developer .item{
@@ -153,7 +159,6 @@
         font-size: 0.95rem;
         word-spacing: -2px;
        }
-       
 }
 @media screen and (min-width: 700px){
     .footer-right > *{

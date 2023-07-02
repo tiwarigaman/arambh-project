@@ -64,6 +64,7 @@
 .home {
   margin: auto;
   width:100%;
+  max-height: 1;
 }
 .row{
   display: flex;
@@ -75,19 +76,26 @@
 }
 .col img{
   width: 100%;
-  margin-top: 20px;
+  margin-block: 60px;
 }
 .col h1{
   text-align: center;
-  line-height: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 30px;
 }
 .col p{
   text-align: center;
-  line-height:30px;
+  font-size: 20px;
+  font-weight: 300;
+  flex-wrap: wrap;
 }
 .col .intro-p{
   color: var(--blue);
   text-align: center;
+  margin-top: 5px;
+  font-size: 30px;
+  font-weight: 700;
 }
 .event{
   margin-left: 10%;
@@ -103,6 +111,7 @@
   display: grid;
   width: 100%;
   gap: 20px;
+  flex-wrap: wrap;
   grid-template-columns: repeat(3,1fr);
 }
 .event-content{
@@ -161,6 +170,7 @@
   font-weight: lighter;
   font-size: 1.675rem;
   color: var(--black2);
+  flex-wrap: wrap;
 }
 .test h2{
   text-align: center;
@@ -173,6 +183,7 @@
   font-weight: 600;
   font-size: 1.575rem;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 .test-container{
   display: flex;
@@ -193,6 +204,8 @@
 .test-name p1{
   margin-left: 20px;
   font-size: 14px;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .purpose-content{
   background-color: #f8f8f8;
@@ -217,17 +230,17 @@
   margin-top: 10px;
   margin-left: 20px;
   font-size: 1.275rem;
-  letter-spacing: 1px;
   text-align: justify;
   font-weight: 400;
+  flex-wrap: wrap;
 }
 .test-content p{
   margin-top: 10px;
   margin-left: 20px;
   font-size: 1rem;
-  letter-spacing: 1px;
   text-align: justify;
   font-weight: 400;
+  flex-wrap: wrap;
 }
 
 .career{

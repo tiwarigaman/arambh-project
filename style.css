@@ -63,18 +63,19 @@
 }
 .home {
   margin: auto;
-  background-image: url('bg.jpg');
+  width:100%;
+  background-image: url('home-image.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
-
 .intro h1{
-  color: #f8f8f8;
+  color: #944848;
   text-align: center;
 }
 .intro p{
-  color: #f8f8f8;
+  margin-top: 30px;
+  color: #d06c6c;
   text-align: center;
 }
 .intro .intro-p{

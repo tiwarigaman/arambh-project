@@ -5,6 +5,7 @@
     padding: 0;
   }
   .container {
+    max-width:100%;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
@@ -15,9 +16,8 @@
     color: #424242;
   }
   .container{
-    display: grid;
-    grid-template-columns: repeat(3,50fr);
-    gap: 20px;
+    display: flex;
+    max-width: 98%;
   }
   .item img{
     width: 35%;
@@ -25,6 +25,7 @@
   .item{
     text-align: center;
     padding: 20px;
+    flex-basis: 45%;
   }
   .title{
     font-size: 14px;
@@ -58,3 +59,21 @@
     background-color: #2d667c;
     opacity: .9;
   }
+
+@media only screen and (min-width:200px) and (max-width:767px){
+  
+    h1.leads{
+      margin-left: 10px;
+    }
+  .container{
+    width:100%;
+    flex-direction: column;
+  }
+  .item{
+    margin-right: 20px;
+  }
+  .contact button{
+    width: 100%;
+    margin-left: 20px;
+  }
+}

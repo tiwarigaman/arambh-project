@@ -298,7 +298,6 @@
 .developer-content{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   transition: 1s;
 }
 .developer .item{

@@ -51,10 +51,8 @@ h1{
     transition: 0.8s;
     height: auto;
   }
-  
-  .event-content:hover img{
+  .event-content img:hover{
     transform: scale(1.05);
-    /* z-index: 0; */
   }
   .event-content .date{
     font-size: 14px;
@@ -67,4 +65,48 @@ h1{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 50px;
+  }
+  .btn{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  .btn span{
+    margin: 5px;
+    transition: 0.1s;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  .btn:hover span{
+    width: 30px;
+    visibility: visible;
+  }
+
+
+
+  /* media queries  */
+  @media only screen and (min-width:200px) and (max-width:767px){
+   
+    .eventin{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+     h2{
+      text-align: center;
+      margin-top: 10px;
+     }
+      .event-content{
+        margin-top: 10px;
+      }
+      .event-content img{
+        width:100%;
+      }
+      p{
+        font-size: 1.2rem;
+      }
+      .h11{
+        font-size: 2.5rem;
+        font-weight: 900;
+      }
   }

@@ -390,39 +390,12 @@ h2{
   height: 100px;
 }
 
-@media screen and (min-width: 700px){
-  .footer-right > *{
-      flex: 1;
-  }
-  .footer-left{
-      flex: 1 0px;
-  }
-  .footer-right{
-      flex: 2 0px;
-  }
-}
 
-@media(max-width: 600px){
-  .footer{
-      padding: 15px;
-  }
-  main{
-      font-size: 55px;
-  }
-}
- .chkbtn{
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    display: none;
-    
- }
- #check{
+ /* #check{
   display: none;
  }
 
-/* Responsive Design */
+
 @media only screen and (max-width:770px) {
   .purpose {
     width:100%;
@@ -478,4 +451,4 @@ h2{
     margin-right: 20px;
     top: 15;
   }
-}
+} */

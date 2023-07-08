@@ -7,38 +7,10 @@ body {
     padding: 0;
   }
   
-  /* Header Section */
-  .header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .logo {
-    font-size: 24px;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
   /* Goal Section */
   #goal {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 5%;
   }
   
@@ -48,7 +20,7 @@ body {
     font-size: 1.875rem;
   }
   #goal p {
-    text-align: justify;
+    text-align: justify; 
     margin-bottom: 30px;
     font-size: 16px;
     color: #444444;
@@ -100,7 +72,7 @@ body {
   }
   
   .goal-box p {
-    text-align: justify;
+    text-align: justify; 
     color: #666;
   }
   #goal h1{
@@ -125,8 +97,8 @@ body {
     margin-top: 5%;
   }
   #helpin {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
   }
@@ -145,8 +117,8 @@ body {
 
 #eg {
 
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 5%;
     padding-bottom: 5%;
   }
@@ -167,4 +139,28 @@ body {
   }
 .eg-boxe ul li{
     color: #575757;
+}
+
+/* media  */
+
+@media only screen and (min-width:200px) and (max-width:767px){
+.goal-base{
+  display: flex;
+  flex-direction: column;
+}
+.goal-box{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.goal-box p{
+  text-align: inherit;
+  font-size: 0.8rem;
+}
+#goal p{
+  text-align: inherit;
+}
+.goal-box h3{
+  text-align: inherit;
+}
 }

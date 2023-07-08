@@ -39,7 +39,7 @@ html{
     border-radius: 5px;
 }
 .feedback{
-    padding: 5% 20% 20% 20%;
+    padding: 5% 10% 20% 10%;
     background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(24, 98, 205, 0.25));
 }
 .feedback-container{

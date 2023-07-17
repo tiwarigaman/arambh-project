@@ -25,7 +25,6 @@ html{
     display: block;
     margin-bottom: 5px;
 }
-
 .form-group input {
     width: 100%;
     padding: 8px;
@@ -52,7 +51,7 @@ html{
     font-weight: 500;
     text-align: center;
 }
-.form-group1 input {
+.form-group1 button {
     width: 34%;
     padding: 8px;
     margin-left: 33%;
@@ -63,7 +62,7 @@ html{
     background-color: var(--blue);
     border-radius: 5px;
 }
-.form-group1 input:hover {
+.form-group1 button:hover {
     opacity: .8;
     cursor: pointer;
 }
@@ -85,7 +84,7 @@ html{
     margin-top: 10px;
     font-size: 1rem;
    }
-   .form-group1 input{
+   .form-group1 button{
     width:100%;
     margin-left: 0;
    }

@@ -7,14 +7,17 @@
   /* .container {
     background-image: linear-gradient(rgb(223, 237, 253), rgb(212, 212, 198));
   } */
-  .container-main{
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
+  body{
+    padding: 2% 5% 5% 5%;
+    background: url(image_bg_leads.webp) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: scroll;
   }
 
 .item img{
-    width: 20%;
+    width: 150px;
+    border-radius: 50%;
   }
   .item{
     text-align: center;
@@ -26,3 +29,7 @@
   .skill{
     font-size: 14px;
   }
+.thought{
+   margin-top: 20px;
+   margin-bottom: 50px;
+}

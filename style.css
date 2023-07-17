@@ -51,10 +51,12 @@
   border: none;
   color: beige;
 }
+
 .nav__item button:hover{
   opacity: 0.9;
   color:beige;
 }
+
 .navbar ul li a:hover{
   color: var(--blue);
 }
@@ -70,6 +72,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1% 5% 1% 5%;
 }
 .col{
   flex-basis: 100%;
@@ -191,6 +194,8 @@
 }
 .test-container{
   display: flex;
+  flex-wrap: wrap;
+  transition: 1s;
   margin-top: 20px;
 }
 .test-container img{
@@ -233,6 +238,7 @@
 .purpose-content p{
   margin-top: 10px;
   margin-left: 20px;
+  margin-right: 20px;
   font-size: 1.275rem;
   text-align: justify;
   font-weight: 400;
@@ -241,6 +247,7 @@
 .test-content p{
   margin-top: 10px;
   margin-left: 20px;
+  margin-right: 20px;
   font-size: 1rem;
   text-align: justify;
   font-weight: 400;
@@ -262,6 +269,7 @@
   background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(24, 98, 205, 0.25));
   padding: 5%;
   margin-top: 30px;
+  padding-bottom: 30px;
   border-radius: 3px;
   box-shadow: -.01px -.01px 5px .01px #cecece;
   display: flex;
@@ -277,6 +285,7 @@
 .career-content p{
   margin-top: 10px;
   margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 50px;
   font-size: 1.175rem;
   text-align: justify;
@@ -413,66 +422,3 @@ h2{
   width: 400px;
   height: 100px;
 }
-
-
- /* #check{
-  display: none;
- }
-
-
-@media only screen and (max-width:770px) {
-  .purpose {
-    width:100%;
-  }
-  .purpose-content{
-    flex-wrap:wrap ;
-  }
-  #quote{
-    margin-top: 20px;
-  }
-  .eventin{
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .career-content{
-    flex-wrap: wrap;
-  }
-  .career-content img{
-    margin: 20px;
-  }
-  .developer-content{
-    display: flex;
-    flex-wrap: wrap;
-    min-width: 200px;
-  }
-}
-@media(max-width:810px){
-  .chkbtn{
-    display: block;
-  }
-  .navbar{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color:white;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-  }
-  .nav__item{
-    display: block;
-  }
-  .nav__item a{
-    font-size: 20px;
-  }
-  .nav__item:hover{
-   background-color: #242424;
-  }
-  #check:checked ~ ul{
-    left: 0;
-    transition: 0.4s;
-    margin-right: 20px;
-    top: 15;
-  }
-} */

@@ -194,7 +194,6 @@
 .test-container{
   display: flex;
   flex-wrap: wrap;
-  transition: 1s;
   margin-top: 20px;
 }
 .test-container img{

@@ -43,6 +43,12 @@
         margin: 20px;
         width:100%;
       }
+      .career-content p{
+        text-align: inherit;
+      }
+      .test-content p{
+        text-align: inherit;
+      }
 
     .eventin{
         display: flex;
@@ -58,9 +64,11 @@
     }
     .purpose-container p{
         font-size: 1.3rem;
+        
     }
     .purpose-content p{
         font-size: 1.1rem;
+       text-align: inherit;
     }
     .learn{
         width:auto;
@@ -77,6 +85,7 @@
   @media screen and (max-width: 767px){
      .home{
         width: 100%;
+        margin-bottom: 20px;
      }
      home .row .col img{
         display: none;
@@ -121,20 +130,19 @@
 
   }
   @media screen and (max-width:479px){
-    
     .home {
         width:100%;
-        margin-top: 50px;
+        margin-top: 20px;
        }
        .home .row .col img{
         display: none;
      }
-     /* .col h1{ 
+     .col h1{ 
       font-size: 40px;
      } 
      .col .intro-p{
       font-size: 40px;
-     } */
+     }
      .purpose{
         padding-block: 20px;
         margin-top:80px;
@@ -166,6 +174,9 @@
     .career-content p{
         font-size: 0.95rem;
         word-spacing: -2px;
+       }
+       .test-container img{
+        display: block;
        }
 }
 @media screen and (min-width: 700px){

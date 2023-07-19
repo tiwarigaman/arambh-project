@@ -106,11 +106,15 @@ h1{
       .event-content img{
         width:100%;
       }
+      .event p{
+        text-align: inherit;
+      }
       p{
-        font-size: 1.2rem;
+        font-size: 1rem;
+      
       }
       .h11{
-        font-size: 2.5rem;
-        font-weight: 900;
+        font-size: 2.2rem;
+        font-weight: 600;
       }
   }

@@ -83,7 +83,8 @@ h1{
   }
 
   .rule{
-    font-weight: 550;
+    font-weight: 510;
+    text-align: justify;
   }
 
   /* media queries  */

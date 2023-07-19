@@ -14,6 +14,7 @@
     .nav-toggle{
       display: block;
       margin-right:25px;
+      font-size: 18px;
     }
     .navbar{
         position: absolute;
@@ -149,10 +150,13 @@
         display: none;
      }
      .col h1{ 
-      font-size: 40px;
+      font-size: 37px;
      } 
      .col .intro-p{
-      font-size: 40px;
+      font-size: 37px;
+     }
+     .col p{
+      font-size: 18px;
      }
      .purpose{
         padding-block: 20px;
@@ -171,7 +175,7 @@
     }
 
     .developer .item{
-        flex-basis: 98%;
+        flex-basis: 80%;
     }
     .developer .leads{
         font-size: 1.25rem;

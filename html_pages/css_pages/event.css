@@ -86,6 +86,7 @@ h1{
     text-align: justify;
   }
 
+  
   /* media queries  */
   @media only screen and (min-width:200px) and (max-width:767px){
    

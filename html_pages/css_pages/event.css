@@ -82,7 +82,10 @@ h1{
     visibility: visible;
   }
 
-
+  .rule{
+    font-weight: 550;
+    font-family: 'Courier New', Courier, monospace;
+  }
 
   /* media queries  */
   @media only screen and (min-width:200px) and (max-width:767px){

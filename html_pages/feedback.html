@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/c81f536b56.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css_pages/feedback.css">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="arambh-template.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- =====BOX ICONS===== -->
+        <title>Feedback | Arambh</title>
+    </head>
+    <body>
+        <section class="feedback">
+            <div class="feedback-container">
+                <h1>Provide Your Valuable Feedback</h1>
+                        <form class="feedback-form" onsubmit="sendEmail(); reset(); return false;">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="username" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback">Feedback:</label>
+                                <textarea col="30" id="feedback" placeholder="Enter you feedback here..." name="feedback" required></textarea>
+                            </div>
+                            <div class="form-group1">
+                                <button type="submit" value="Submit">Submit</button>
+                            </div>
+                            <p id="message-status" style="margin-top: 20px;"></p> 
+                        </form>
+            </div>
+        </section>
+    </body>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail(){
+            Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "amant6393@gmail.com",
+            Password : "56B9F16CA8C8137F0871A440454AEA643D9A",
+            To : 'arambh.community@gmail.com',
+            From : 'amant6393@gmail.com',
+            Subject : "Feedback of Arambh Community",
+            Body : "Name: "+document.getElementById("name").value
+                + "<br>Email: "+ document.getElementById("email").value
+                + "<br>Feedback: "+document.getElementById("feedback").value
+        }).then(
+        // message => alert(message)
+            function (message) {
+                if(message=="OK"){
+                var messageStatus = document.getElementById("message-status");
+                messageStatus.innerHTML = "Feedback send successfully!";
+                messageStatus.style.color = "green";
+                }else{
+                var messageStatus = document.getElementById("message-status");
+                messageStatus.innerHTML = message;
+                messageStatus.style.color = "red";
+                }
+                },
+                function (error) {
+                var messageStatus = document.getElementById("message-status");
+                messageStatus.innerHTML = "An error occurred while sending the feedback.";
+                messageStatus.style.color = "red"; // Set paragraph color to red
+            }
+        );
+    }
+    </script>
+</html>

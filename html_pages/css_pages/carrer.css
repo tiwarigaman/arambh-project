@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+body {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* carr Section */
+  #carr {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+  }
+  
+  #carr h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.875rem;
+  }
+  #carr p {
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.8;
+  }
+  .carr-base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #carr .carr-box img{
+    height: 100px;
+    display: flex;
+    margin-right:  20px;
+    cursor: pointer;
+    
+  }
+  .carr-box {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #carr .carr-box{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 10px 5px 5px 4px;
+  }
+  .carr-base p1{
+    font-size: 1.55rem;
+    color: #3f3f3f;
+  }
+
+  #carr .carr-basee{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(1100px, 500fr));
+    grid-gap: 3rem;
+    margin-top: 60px;
+  }
+  .carr-box{
+    display: flex;
+  }
+
+  .carr-box h3 {
+    text-align: justify;
+    color: #3f3f3f;
+  }
+  
+  .carr-box p {
+    text-align: justify;
+    color: #666;
+  }
+  #carr h1{
+    color: #3a3a3a;
+  }
+  
+  .carr-box img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  /* From here the section How Arambh Impacts Your Career */
+  #imp {
+    background-color: #f9fbff;
+    margin-top: 5%;
+  }
+  #impin {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  #impin p{
+    color: #4e4e4e;
+  }
+  #impin h2,h3{
+    color: #3f3f3f;
+}
+.imp-box ul li{
+  color: #333;
+}
+ 

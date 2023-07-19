@@ -80,6 +80,17 @@
     .test-content .qoute{
         width: 5%;
     }
+
+    .test-container{
+      display: block;
+    }
+    .test-container img{
+      position: relative;
+      left: 50%;
+    }
+    .test-name{
+      text-align: center;
+    }
   } 
  
   @media screen and (max-width: 767px){

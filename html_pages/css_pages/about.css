@@ -5,7 +5,11 @@
     font-family: 'Poppins', serif;
     box-sizing: border-box;
   }
- 
+  :root{
+    --blue:#1862CD;
+    --myBlack:#333333;
+    --black2:#242424;
+  }
 #about {
     margin-left: 10%;
     margin-right: 10%;
@@ -113,7 +117,14 @@
     color:#4e4e4e;
     text-align: justify;
 }
-
+::selection {
+    color: rgb(247, 247, 247);
+    background: var(--blue);
+  }
+  ::-moz-selection { /* Code for Firefox */
+    color: rgb(255, 255, 255);
+    background: var(--blue);
+  }
 @media only screen and (min-width:200px) and (max-width:767px){
     
     h1{

@@ -14,7 +14,11 @@
     height: 100%;
     overflow: scroll;
   }
-
+  :root{
+    --blue:#1862CD;
+    --myBlack:#333333;
+    --black2:#242424;
+  }
 .item img{
     width: 150px;
     height: 150px;
@@ -33,4 +37,12 @@
 .thought{
    margin-top: 20px;
    margin-bottom: 50px;
+}
+::selection {
+  color: rgb(247, 247, 247);
+  background: var(--blue);
+}
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: var(--blue);
 }

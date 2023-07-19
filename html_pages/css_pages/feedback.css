@@ -66,6 +66,14 @@ html{
     opacity: .8;
     cursor: pointer;
 }
+::selection {
+  color: rgb(247, 247, 247);
+  background: var(--blue);
+}
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: var(--blue);
+}
 /* media queries */
 @media only screen and (min-width:200px) and (max-width:767px){
  

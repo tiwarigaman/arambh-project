@@ -421,3 +421,11 @@ h2{
   width: 400px;
   height: 100px;
 }
+::selection {
+  color: rgb(247, 247, 247);
+  background: var(--blue);
+}
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: var(--blue);
+}

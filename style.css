@@ -37,9 +37,10 @@
 .navbar{
   flex-basis: 730px;
 }
-.logo img{
+.main-nav .logo img{ 
   width:40%;
-  margin-left: 20px;;
+  margin-left: 20px;
+  cursor: pointer;
 }
 .nav__item button{
   padding: 5px;

@@ -61,14 +61,15 @@
       }
       
     .purpose h2{
-        font-size: 1.4rem;
+        font-size: 1.675rem;
+        font-weight: 300;
     }
     .purpose-container p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         
     }
     .purpose-content p{
-        font-size: 1.1rem;
+        font-size: 1rem;
        text-align: inherit;
     }
     .learn{
@@ -79,7 +80,7 @@
         font-size: 10;
     }
     .test-content .qoute{
-        width: 5%;
+        width: 6%;
     }
 
     .test-container{
@@ -90,9 +91,14 @@
       left: 50%;
     }
     .test-name{
-      text-align: center;
+      text-align:center;
+    }
+    .developer p{
+      font-size: 1rem;
+      
     }
   } 
+
  
   @media screen and (max-width: 767px){
      .home{
@@ -178,20 +184,27 @@
         flex-basis: 80%;
     }
     .developer .leads{
-        font-size: 1.25rem;
-        font-weight: 550;
+        font-size: 1.67rem;
+        font-weight: 300;
         margin-bottom: 5px;
     }
     .developer .dev{
         font-weight: 400;
-        font-size: .95rem;
+        font-size: 1rem;
     }
     .career-content p{
-        font-size: 0.95rem;
+        font-size: 1rem;
         word-spacing: -2px;
+       }
+       .career-content h3{
+        font-size: 1.675rem;
+        font-weight: 300;
        }
        .test-container img{
         display: block;
+       }
+       .test-content p{
+        font-size: 1rem;
        }
 }
 @media screen and (min-width: 700px){

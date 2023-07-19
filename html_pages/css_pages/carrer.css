@@ -4,7 +4,11 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+  :root{
+    --blue:#1862CD;
+    --myBlack:#333333;
+    --black2:#242424;
+  }
   /* Header Section */
   .header {
     background-color: #333;
@@ -130,4 +134,11 @@ body {
 .imp-box ul li{
   color: #333;
 }
- 
+::selection {
+  color: rgb(247, 247, 247);
+  background: var(--blue);
+}
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: var(--blue);
+}

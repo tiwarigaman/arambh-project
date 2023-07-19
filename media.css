@@ -13,11 +13,11 @@
    }
     .nav-toggle{
       display: block;
-      margin-right:20px;
+      margin-right:25px;
     }
     .navbar{
         position: absolute;
-        background-color:rgb(247, 241, 241);
+        background-color:rgb(245, 245, 245);
         left: -100%;
         top: 100%;
         width:100%;
@@ -129,6 +129,12 @@
        .home .row .col img{
         display: none;
      }
+     /* .col h1{ 
+      font-size: 40px;
+     } 
+     .col .intro-p{
+      font-size: 40px;
+     } */
      .purpose{
         padding-block: 20px;
         margin-top:80px;

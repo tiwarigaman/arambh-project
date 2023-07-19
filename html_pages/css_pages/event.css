@@ -84,9 +84,10 @@ h1{
 
   .rule{
     text-align: justify;
+    font-weight: 500;
   }
 
-  
+
   /* media queries  */
   @media only screen and (min-width:200px) and (max-width:767px){
    

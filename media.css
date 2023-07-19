@@ -13,11 +13,12 @@
    }
     .nav-toggle{
       display: block;
-      margin-right:10px;
+      margin-right:25px;
+      font-size: 18px;
     }
     .navbar{
         position: absolute;
-        background-color:#fff;
+        background-color:rgb(245, 245, 245);
         left: -100%;
         top: 100%;
         width:100%;
@@ -33,6 +34,7 @@
      }
     .navbar ul{
         flex-direction: column;
+        margin-left: 50px;
     }
      
     .career-content{
@@ -41,6 +43,12 @@
       .career-content img{
         margin: 20px;
         width:100%;
+      }
+      .career-content p{
+        text-align: inherit;
+      }
+      .test-content p{
+        text-align: inherit;
       }
 
     .eventin{
@@ -53,13 +61,16 @@
       }
       
     .purpose h2{
-        font-size: 1.4rem;
+        font-size: 1.675rem;
+        font-weight: 300;
     }
     .purpose-container p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        
     }
     .purpose-content p{
-        font-size: 1.1rem;
+        font-size: 1rem;
+       text-align: inherit;
     }
     .learn{
         width:auto;
@@ -69,7 +80,7 @@
         font-size: 10;
     }
     .test-content .qoute{
-        width: 5%;
+        width: 6%;
     }
 
     .test-container{
@@ -80,13 +91,19 @@
       left: 50%;
     }
     .test-name{
-      text-align: center;
+      text-align:center;
+    }
+    .developer p{
+      font-size: 1rem;
+      
     }
   } 
+
  
   @media screen and (max-width: 767px){
      .home{
         width: 100%;
+        margin-bottom: 20px;
      }
      home .row .col img{
         display: none;
@@ -131,13 +148,21 @@
 
   }
   @media screen and (max-width:479px){
-    
     .home {
         width:100%;
-        margin-top: 50px;
+        margin-top: 20px;
        }
        .home .row .col img{
         display: none;
+     }
+     .col h1{ 
+      font-size: 37px;
+     } 
+     .col .intro-p{
+      font-size: 37px;
+     }
+     .col p{
+      font-size: 18px;
      }
      .purpose{
         padding-block: 20px;
@@ -156,20 +181,30 @@
     }
 
     .developer .item{
-        flex-basis: 98%;
+        flex-basis: 80%;
     }
     .developer .leads{
-        font-size: 1.25rem;
-        font-weight: 550;
+        font-size: 1.67rem;
+        font-weight: 300;
         margin-bottom: 5px;
     }
     .developer .dev{
         font-weight: 400;
-        font-size: .95rem;
+        font-size: 1rem;
     }
     .career-content p{
-        font-size: 0.95rem;
+        font-size: 1rem;
         word-spacing: -2px;
+       }
+       .career-content h3{
+        font-size: 1.675rem;
+        font-weight: 300;
+       }
+       .test-container img{
+        display: block;
+       }
+       .test-content p{
+        font-size: 1rem;
        }
 }
 @media screen and (min-width: 700px){

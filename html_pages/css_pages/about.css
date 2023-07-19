@@ -118,15 +118,24 @@
     
     h1{
         font-size: 1.75rem;
+        font-weight: 600;
     }
     p{
-        font-size: 1rem;
+        font-size: o.95rem;
     }
     h2{
-        font-size: 1.75rem;
+        font-size: 1.65rem;
+        font-weight: 500;
     }
     h3{
         font-size: 1.55rem;
+        font-weight: 400;
+    }
+    #about p{
+      text-align: inherit;
+    }
+    .origin-box p{
+        text-align: inherit;
     }
     .overview-base{
         max-width:98%;

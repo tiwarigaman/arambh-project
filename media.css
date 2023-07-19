@@ -13,11 +13,11 @@
    }
     .nav-toggle{
       display: block;
-      margin-right:10px;
+      margin-right:20px;
     }
     .navbar{
         position: absolute;
-        background-color:#fff;
+        background-color:rgb(247, 241, 241);
         left: -100%;
         top: 100%;
         width:100%;
@@ -33,6 +33,7 @@
      }
     .navbar ul{
         flex-direction: column;
+        margin-left: 50px;
     }
      
     .career-content{

@@ -32,6 +32,12 @@ html{
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border: 1px dashed transparent;
+}
+.upcoming-event:hover{
+  background: #f1f0f0;
+  border:1px dashed blue;
 }
 .upcoming-event img{
   overflow: hidden;
@@ -46,7 +52,7 @@ html{
 .upcoming-event-content span{
   display: block;
   line-height: 1.5rem;
-  font-size: 15px;
+  font-size: 14px;
 }
 .upcoming-event-content p{
   font-size: 14px;
@@ -54,8 +60,8 @@ html{
   font-weight: 400;
 }
 .upcoming-event-content h4{
-  font-weight: 500;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 18px;
   color: black;
   margin-top: 13px;
 }
@@ -66,21 +72,23 @@ html{
 }
 .upcoming-event-content h6{
   margin: 14px 0px;
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
 }
 .upcoming-event-content h3{
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
 }
 .upcoming-event-content h6 a{
   color:red;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .upcoming-event-content h3 a{
   color:red;
   text-decoration: none;
+  font-size: 16px;
 }
 /* upcoming event closed */
 h1{

@@ -17,6 +17,72 @@
 html{
   scroll-behavior: smooth;
 }
+/* upcoming event */
+.upcoming-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -70px;
+}
+.upcoming-event{
+  width: 400px;
+  min-height: 500px;
+  background: rgb(255, 255, 255);
+  box-shadow: .01px .01px 5px .01px #cecece;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.upcoming-event img{
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+}
+.upcoming-event:hover img{
+  transform: scale(1.0456);
+}
+.upcoming-event-content{
+  padding: 25px;
+}
+.upcoming-event-content span{
+  display: block;
+  line-height: 1.5rem;
+  font-size: 15px;
+}
+.upcoming-event-content p{
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+}
+.upcoming-event-content h4{
+  font-weight: 500;
+  font-size: 17px;
+  color: black;
+  margin-top: 13px;
+}
+.upcoming-event-content h5{
+  font-size:17px;
+  margin-top: 14px;
+  margin-bottom: 8px;
+}
+.upcoming-event-content h6{
+  margin: 14px 0px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.upcoming-event-content h3{
+  font-size: 17px;
+  font-weight: 400;
+}
+.upcoming-event-content h6 a{
+  color:red;
+  text-decoration: none;
+}
+
+.upcoming-event-content h3 a{
+  color:red;
+  text-decoration: none;
+}
+/* upcoming event closed */
 h1{
     text-align: center;
     font-weight: 600;
@@ -97,7 +163,6 @@ h1{
   }
   /* media queries  */
   @media only screen and (min-width:200px) and (max-width:767px){
-   
     .eventin{
       display: flex;
       width: 100%;

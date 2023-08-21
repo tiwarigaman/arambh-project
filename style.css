@@ -135,6 +135,14 @@ header .event{
   font-size: 50px;
   font-weight: 700;
 }
+.event p a{
+  text-decoration: none;
+  font-size: 17px;
+  color: red;
+}
+.event p{
+  font-size: 20px;
+}
 .event{
   margin-left: 10%;
   margin-right: 10%;

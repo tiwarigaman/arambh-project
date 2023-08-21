@@ -25,14 +25,14 @@ html{
   margin-bottom: -70px;
 }
 .upcoming-event{
-  width: 400px;
+  width: 390px;
   min-height: 500px;
   background: rgb(255, 255, 255);
   box-shadow: .01px .01px 5px .01px #cecece;
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.4s ease-in-out;
+  transition: 0.8s ease-in-out;
   border: 1px dashed transparent;
 }
 .upcoming-event:hover{
@@ -41,7 +41,7 @@ html{
 }
 .upcoming-event img{
   overflow: hidden;
-  transition: 0.4s ease-in-out;
+  transition: 0.8s ease-in-out;
 }
 .upcoming-event:hover img{
   transform: scale(1.0456);

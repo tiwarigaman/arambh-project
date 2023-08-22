@@ -35,7 +35,7 @@ html{
     margin: 40px auto;
     text-align: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(170, 189, 216, 0.25));
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(245, 246, 248, 0.25));
     padding-block: 60px;
     box-shadow: .01px .01px 5px .01px #cecece;
 }
@@ -60,7 +60,7 @@ html{
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-around;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(183, 198, 219, 0.25));
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(245, 246, 248, 0.25));
     box-shadow: .01px .01px 5px .01px #cecece;
 }
 .left-content h3{
@@ -118,7 +118,7 @@ html{
     margin: 0px auto 40px;
     padding-block: 50px;
     padding-inline: 50px;
-    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(181, 197, 220, 0.25));
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(245, 246, 248, 0.25));
     /* display: flex;
     flex-direction: column;
     justify-content: center; */

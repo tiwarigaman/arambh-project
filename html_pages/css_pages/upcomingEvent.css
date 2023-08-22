@@ -35,7 +35,7 @@ html{
     margin: 40px auto;
     text-align: center;
     justify-content: center;
-    background-image: linear-gradient(to bottom right, rgb(251, 251, 249),rgba(218, 227, 240, 0.25));
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(170, 189, 216, 0.25));
     padding-block: 60px;
     box-shadow: .01px .01px 5px .01px #cecece;
 }
@@ -60,7 +60,7 @@ html{
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-around;
-    background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(24, 98, 205, 0.25));
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(183, 198, 219, 0.25));
     box-shadow: .01px .01px 5px .01px #cecece;
 }
 .left-content h3{
@@ -118,7 +118,7 @@ html{
     margin: 0px auto 40px;
     padding-block: 50px;
     padding-inline: 50px;
-    background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(24, 98, 205, 0.25));
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(181, 197, 220, 0.25));
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -126,10 +126,11 @@ html{
 }
 .left-rules ol li{
     position:relative;
-    top: 50px;
-    font-size: 15px;
-    line-height: 2rem;
-    color:rgb(46, 42, 42);
+    top: 40px;
+    margin-top: 12px;
+    font-size: 16px;
+    /* line-height: 2rem; */
+    color:rgb(34, 31, 31);
     font-weight: 400;
 }
 @media screen and (max-width:767px) {

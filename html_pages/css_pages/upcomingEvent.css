@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: poppins,sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.mainEvent{
+    margin-bottom: 20px;
+}
+.mainEvent h1{
+    text-align: center;
+    padding-block: 20px;
+    font-size: 50px;
+    color:#1862CD;
+    text-transform: uppercase;
+}
+.hero-image{
+    width: 100%;
+    max-width:100%;
+    margin: 20px auto;
+}
+.hero-image img{
+    width:100%;
+    max-height:600px;
+}
+.event-greetings{
+    width: 100%;
+    max-width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right, rgb(251, 251, 249),rgba(218, 227, 240, 0.25));
+    padding-block: 60px;
+    box-shadow: .01px .01px 5px .01px #cecece;
+}
+.event-greetings h3{
+    font-size: 29px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.event-greetings p{
+    font-size: 18px;
+    color:rgb(69, 65, 65);
+    font-weight: 500;
+}
+.event-content {
+    width: 100%;
+    max-width: 90%;
+    padding-block: 60px;
+    margin: 10px auto 50px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(24, 98, 205, 0.25));
+    box-shadow: .01px .01px 5px .01px #cecece;
+}
+.left-content h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.left-content ul li{
+    font-size: 18px;
+    font-weight: 400;
+    color:rgb(47, 43, 43);
+    line-height: 2rem;
+}
+.right-content h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.right-content ul li {
+    font-size: 18px;
+    font-weight: 400;
+    color:rgb(47, 43, 43);
+    line-height: 2rem;
+}
+.right-content ul li a{
+    text-decoration: none;
+    color:red;
+    font-weight: 600;
+    font-size: 19px;
+}
+.right-content ul li a:hover{
+    text-decoration: underline;
+    color:#1862CD;
+}
+.left-content ul li button{
+    padding: 1px 14px;
+    background: #1862CD;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    color:white;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.left-content ul li button:hover{
+    background: #0e4189;
+}
+@media screen and (max-width:767px) {
+    .mainEvent h1{
+        font-size: 30px;
+        padding-block: 30px;
+    }
+    .event-greetings h3{
+        font-size: 24px;
+    }
+    .event-greetings p{
+        font-size: 16px;
+    }
+    .left-content{
+        margin: 0px 0px 20px;
+    }
+    .left-content h3{
+        font-size: 21px;
+    }
+    .left-content ul li{
+        font-size: 16px;
+    }
+    .right-content h3{
+        font-size: 21px;
+
+    }
+    .right-content ul li {
+        font-size: 16px;
+        margin-top: 20px;
+        line-height: 1rem;
+    }
+    .right-content ul li a{
+        font-size: 16px;
+    }
+    li{
+        list-style: none;
+    }
+}

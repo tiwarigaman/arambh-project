@@ -65,39 +65,20 @@ html{
   color: black;
   margin-top: 13px;
 }
-.upcoming-event-content h5{
-  font-size:17px;
-  margin-top: 14px;
-  margin-bottom: 8px;
-}
-.upcoming-event-content h6{
-  margin: 14px 0px;
-  font-size: 15px;
-  font-weight: 500;
-}
-.upcoming-event-content h3{
-  font-size: 15px;
-  font-weight: 500;
-}
-.upcoming-event-content h6 a{
-  color:red;
+.btn a{
   text-decoration: none;
-  font-size: 16px;
+  color:red;
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn {
+  padding: 7px;
+}
+.btn a:hover{
+  color:#1862CD;
+  text-decoration: underline;
 }
 
-.upcoming-event-content h3 a{
-  color:red;
-  text-decoration: none;
-  font-size: 16px;
-}
-.upcoming-event-content h3 a:hover{
-  text-decoration: underline;
-  color:#1862CD;
-}
-.upcoming-event-content h6 a:hover{
-  text-decoration: underline;
-  color:#1862CD;
-}
 /* upcoming event closed */
 h1{
     text-align: center;

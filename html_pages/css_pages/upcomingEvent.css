@@ -89,10 +89,10 @@ html{
     font-weight: 600;
     font-size: 19px;
 }
-.right-content ul li a:hover{
+/* .right-content ul li a:hover{
     text-decoration: underline;
     color:#1862CD;
-}
+} */
 .left-content ul li button{
     padding: 1px 14px;
     background: #1862CD;

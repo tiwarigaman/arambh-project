@@ -57,6 +57,7 @@ html{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
     justify-content: space-around;
     background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(24, 98, 205, 0.25));
     box-shadow: .01px .01px 5px .01px #cecece;

@@ -96,7 +96,7 @@ html{
 } */
 .left-content ul li button{
     padding: 1px 14px;
-    background: #1862CD;
+    background:red;
     border: none;
     cursor: pointer;
     border-radius: 3px;
@@ -106,7 +106,7 @@ html{
     transition: 0.5s;
 }
 .left-content ul li button:hover{
-    background: #0e4189;
+    background:red;
 }
 .rules h2{
     text-align: center;

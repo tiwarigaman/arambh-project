@@ -131,8 +131,59 @@ html{
     font-size: 16px;
     /* line-height: 2rem; */
     color:rgb(34, 31, 31);
+    font-weight: 300;
+}
+/* winner section */
+.winner{
+    width: 100%;
+    max-width:90%;
+    margin: 0px auto 40px;
+    padding-block: 50px;
+    padding-inline: 50px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgba(245, 246, 248, 0.25));
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    box-shadow: .01px .01px 5px .01px #cecece;
+}
+.winner h1{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 700;
+    color:#1862CD;
+}
+.winner-content h3{
+    font-size: 30px;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+.winner-content h4{
+    font-size: 18px;
     font-weight: 400;
 }
+.winner-content p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    color:#0072b1;
+    cursor: pointer;
+}
+.fab {
+    font-size:20px;
+    color:#0072b1;
+}
+.winner-image img{
+    width:350px;
+}
+.winner-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 15px;
+}
+
 @media screen and (max-width:767px) {
     .mainEvent h1{
         font-size: 30px;
@@ -148,22 +199,26 @@ html{
         margin: 0px 0px 20px;
     }
     .left-content h3{
-        font-size: 21px;
+        font-size: 20px;
     }
     .left-content ul li{
-        font-size: 16px;
+        font-size: 15px;
     }
     .right-content h3{
-        font-size: 21px;
+        font-size: 20px;
 
     }
     .right-content ul li {
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 20px;
         line-height: 1rem;
     }
     .right-content ul li a{
         font-size: 16px;
+    }
+    .left-content ul li button{
+        padding: 1px 8px;
+        font-size: 14px;
     }
     li{
         list-style: none;
@@ -171,5 +226,28 @@ html{
     .left-rules ol li{
         font-size: 13px;
         list-style-type:decimal;
+    }
+    .winner h1{
+        font-size:18px;
+        font-weight: 600;
+    }
+    .winner-box{
+        flex-direction:column-reverse;
+        gap: 0;
+    }
+    .winner-content h3{
+        font-size:18px;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    .winner-image img{
+        width:100%;
+        height: auto;
+    }
+    .winner-content h4{
+        font-size: 16px;
+    }
+    .winner-content p{
+        font-size:16px;
     }
 }

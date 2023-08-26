@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/c81f536b56.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Event</title>
+    <title>Recent Event</title>
     <link rel="stylesheet" href="./css_pages/upcomingEvent.css">
 </head>
 <body>
     <section>
         <div class="mainEvent">
-             <h1>Latest Event</h1>
+             <h1>Recent Event</h1>
              <div class="hero-image">
                  <img src="LOGIC LAB 23.1.0 (2) (1).png" alt="event-image">
              </div>
@@ -70,19 +71,40 @@
                   <li>Date: [22 August]</li>
                   <li>Time: [6:30pm-8:00pm]</li>
                   <li>Platform: Codeforces</li>
-                  <li>At 6:30PM join contest: <button >Closed</button></li>
+                  <li>At 6:30PM join contest: <button  class="closed-btn">Closed</button></li>
                 </ul>
             </div>
             <div class="right-content event-box">
                 <h3>Steps to join contest:</h3>
                 <ul>
                    <li>must have a Codeforces account</li>
-                   <li>To create acount <a href="">Closed</a></li>
+                   <li>To create acount <a  href="#">Closed</a></li>
                    <li>After registering</li>
-                   <li>Fill out the form <a  href="">Closed</a></li>
+                   <li>Fill out the form <a href="#">Closed</a></li>
                 </ul>
             </div>
          </div>
+
+         <!-- winner section -->
+         <div class="winner">
+            <h1> Announcing the LOGIC LAB 23.1.0 Hackathon Winner! </h1>
+            <div class="winner-box">
+                <div class="winner-content">
+                     <h3>Congratulations</h3>
+                     <h4> a brilliant 2nd-year <br>student of CSE</h4>
+                     <p>Ram Kumar <span><a href="https://www.linkedin.com/in/ram-kumar-057581267/"><i class="fab fa-linkedin"></i></a></span></p>
+                </div>
+                <div class="winner-image">
+                    <img src="winner-removebg-preview.png" alt="">
+                </div>
+            </div>
+         </div>
     </section>
+    <script>
+        const closedBtn = document.querySelector('.closed-btn');
+        closedBtn.addEventListener('click',()=>{
+            alert("sorry session has ended");
+        });
+    </script>
 </body>
 </html>

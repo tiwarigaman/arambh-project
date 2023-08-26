@@ -13,11 +13,11 @@
 
 <body>
   <!--===== HEADER =====-->
-  <header>
+  <!-- <header>
     <div class="event">
         <p>A coding contest will be held <span>,To Join</span> <a class="btn" href="html_pages/event.html">Click here &rarr;</a></p>
     </div>    
-</header>
+</header> -->
   <!-- navbar -->
   <nav>
     <div class="main-nav" >
@@ -75,8 +75,8 @@
   </section>
 
   <section class="event">
-    <h2>Latest Event</h2>
-    <p class="no">Upcoming event <a href="html_pages/event.html">Know more &rarr;</a></p>
+    <h2>Event</h2>
+    <p class="no"><a class="arrow-btn" href="html_pages/event.html">Read more</a></p>
     <!-- <div class="eventin">
       <div class="event-content">
         <img src="https://5.imimg.com/data5/ZH/SB/GC/SELLER-16593403/android-app-development-500x500.jpg">
@@ -236,6 +236,21 @@
     toggleButton.addEventListener('click', () => {
       navLinks.classList.toggle('active')
     })
+
+    const arrowBtn = document.querySelector('.arrow-btn');
+    arrowBtn.addEventListener('mouseenter',()=>{
+      arrowBtn.innerHTML=" Read more &rarr;";
+      arrowBtn.style.textDecoration="underline";
+      arrowBtn.style.color="#1862CD";
+      arrowBtn.style.fontSize="17px";
+    });
+    arrowBtn.addEventListener('mouseleave',()=>{
+      arrowBtn.innerHTML="Read more";
+      arrowBtn.style.textDecoration="";
+      arrowBtn.style.color="";
+      arrowBtn.style.fontSize="";
+    });
+
   </script>
 </body>
 </html>

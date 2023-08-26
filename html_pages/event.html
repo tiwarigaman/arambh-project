@@ -21,7 +21,7 @@
           </p>
         </section>
           <section class="event">
-            <h2>Upcoming Event</h2>
+            <h2>Recent Event</h2>
             <!-- <p class="no">Not schedule yet...</p> -->
             <section class="upcoming-section">
               <div class="upcoming-event">
@@ -33,7 +33,7 @@
                   <h4>We are excited to announce the upcoming 1st Year Coding Contest,hosted on Codeforces</h4>
                 </div>
                 <div class="btn">
-                  <a href="upcomingEvent.html">know more &rarr;</a>
+                  <a class="event-arrow" href="upcomingEvent.html">&rarr;</a>
                 </div>
               </div>
 
@@ -85,6 +85,16 @@
               </div>
             </div>
           </section>
+          <script>
+              const eventHover = document.querySelector('.upcoming-event');
+              const eventArrow = document.querySelector('.event-arrow');
+              eventHover.addEventListener('mouseenter',()=>{
+                eventArrow.innerHTML = "Read more &rarr;";
+              });
+              eventHover.addEventListener('mouseleave',()=>{
+                eventArrow.innerHTML = "&rarr;";
+              });
+          </script>
           
     </body>
 </html>

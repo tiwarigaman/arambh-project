@@ -68,7 +68,7 @@ body{
     padding-top: 8px;
   }
   .login-box .user-box input {
-    width: 70%;
+    width: 90%;
     padding: 20px 5px 8px;
     margin-left: 15px;
     font-size: 16px;
@@ -119,6 +119,7 @@ body{
   }
   @media screen and (max-width:600px){
     .login-box {
+      margin-top: 30px;
       width:100%;
       max-width:100%;
     }

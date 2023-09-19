@@ -28,7 +28,13 @@
                   <label for="year1">1st year</label>
                   <br>
                   <input type="radio" name="myYear" id="year2"  required="">
-                  <label for="year2">2nd year</label>      
+                  <label for="year2">2nd year</label>   
+                  <br>
+                  <input type="radio" name="myYear" id="year3"  required="">
+                  <label for="year3">3rd year</label> 
+                  <br>
+                  <input type="radio" name="myYear" id="year4"  required="">
+                  <label for="year4">4th year</label>    
               </div>
               <div class="user-box">
                  <input type="text" id="wNumber" required="">
@@ -51,40 +57,35 @@
        <script src="https://smtpjs.com/v3/smtp.js"></script>
    <script>
          function sendEmail(){
-                Email.send({
-                 Host : "smtp.elasticemail.com",
-                 Username : "amant6393@gmail.com",
-                 Password : "56B9F16CA8C8137F0871A440454AEA643D9A",
-                 To : 'arambh.community@gmail.com',
-                 From :document.getElementById('email').value,
-                 Subject : "to join arambh",
-                 Body : "Name:" + document.getElementById('fname').value
-                       + "<br>Email: "+ document.getElementById("email").value
-                       + "<br>Year: "+ document.getElementById("year1").value
-                       + "<br>Year: "+ document.getElementById("year2").value
-                       + "<br>Watsapp number: "+ document.getElementById("wNumber").value
-                       + "<br>phone number: "+ document.getElementById("pNumber").value
-                       + "<br>skills: "+ document.getElementById("skills").value
-              }).then(
-             message => alert("your message has sent successfully")
-             );
-            }
+    var emailBody = "Name: " + document.getElementById('fname').value +
+                    "<br>Email: " + document.getElementById("email").value +
+                    "<br>Year: ";
 
-            // const nameBox = document.getElementById('fname');
-            // const userBox1 = document.getElementById('user-box1');
-            // const alertBox = document.getElementById('demo');
-            // nameBox.addEventListener('click',()=>{
-            //      if(userBox1.style.border=="1px solid red"&&nameBox.style.input=="red"&&alertBox.innerHTML=="this is required question"){
-            //       userBox1.style.border="";
-            //       nameBox.style.input="";
-            //       alertBox.innerHTML="";
-            //      }
-            //      else{
-            //       userBox1.style.border="1px solid red";
-            //       nameBox.style.input="red";
-            //       alertBox.innerHTML="this is required question";
-            //      }
-            // });
+    if (document.getElementById("year1").checked) {
+        emailBody += document.getElementById("year1").value;
+    } else if (document.getElementById("year2").checked) {
+        emailBody += document.getElementById("year2").value;
+    } else if (document.getElementById("year3").checked) {
+        emailBody += document.getElementById("year3").value;
+    } else if (document.getElementById("year4").checked) {
+        emailBody += document.getElementById("year4").value;
+    }
+
+    emailBody += "<br>Watsapp number: " + document.getElementById("wNumber").value +
+                 "<br>Phone number: " + document.getElementById("pNumber").value +
+                 "<br>Skills: " + document.getElementById("skills").value;
+
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "amant6393@gmail.com",
+        Password: "56B9F16CA8C8137F0871A440454AEA643D9A",
+        To: 'arambh.community@gmail.com',
+        From: document.getElementById('email').value,
+        Subject: "Join Aarambh",
+        Body: emailBody
+    });
+}
+
    </script>
   </body>
 </html>

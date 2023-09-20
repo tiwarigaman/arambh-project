@@ -119,7 +119,7 @@ body{
   }
   @media screen and (max-width:600px){
     .login-box {
-      margin-top: 30px;
+      margin-top: 20px;
       width:100%;
       max-width:100%;
     }

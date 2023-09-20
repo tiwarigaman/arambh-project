@@ -28,6 +28,10 @@ body{
     border-radius: 10px;
     border-top: 8px solid rgb(53, 53, 183);
     box-shadow: .01px .01px 5px .01px #cecece;
+    transition: 0.5s;
+  }
+  .header:hover{
+    transform: translateY(-1px);
   }
   .header h1{
     text-align: center;

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/c81f536b56.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c81f536b56.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join |Aarambh</title>
+    <link rel="stylesheet" href="css_pages/joinArambh.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div class="main-nav" >
+          <!-- <a href="index.html" class="logo"> 
+               <img src="arambh.png">
+             </a> -->
+             <div class="logo">
+              <img src="arambh.png" onclick="window.location.href='index.html';" >
+             </div>
+          <div class="navbar" id="navbar">          
+            <ul>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="goals.html" class="nav__link">Goals</a></li>
+                <li class="nav__item"><a href="https://discord.gg/SNjR5HY5" class="nav__link">Community</a></li>
+                <li class="nav__item"><a href="event.html" class="nav__link">Events</a></li>
+                <li class="nav__item"><a href="mailto:arambh.community@gmail.com" class="nav__link">Contact Us</a></li>
+                <li class="nav__item"><a href="joinForm.html"><button>Join Aarambh<span>&#10230;</span></button></a></li>                       
+            </ul> 
+          </div> 
+          <a href="#" class="nav-toggle" id="nav-toggle">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    <!-- nav bar ends -->
+
+    <div class="container">
+        <h1>Join <span>Aarambh</span></h1>
+        <form id="joinForm" onsubmit="sendEmail(); reset(); return false";>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="your answer">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="your answer">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="your answer">
+
+            <label for="whatsapp">WhatsApp Number:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="your answer">
+
+            <label for="year">Year of Study:</label>
+            <select id="year" name="year" placeholder="your answer">
+                <option value="1st Year">B.Tech 1st Year</option>
+                <option value="2nd Year">B.Tech 2nd Year</option>
+                <option value="3rd Year">B.Tech 3rd Year</option>
+                <option value="4th Year">B.Tech 4th Year</option>
+            </select>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" required="" placeholder="your answer">
+
+            <button type="submit">Join</button>
+        </form>
+    </div>
+    <!--Footer section-->
+  <footer class="footer">
+      <div class="footer-left">
+        <img src="arambh-white.png" alt="">
+         <p> Aarambh is a website that provides resources and tutorials <br> informations for computer science and programming <br>
+            enthusiasts,assisting them in their learning journey.
+         </p>
+         <div class="Socials">
+          <a href="https://github.com/Project-Arambh" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aarambh-the-gateway-to-coding/" target="_blank" class="ln"><i class="fab fa-linkedin"></i></a>
+         </div>
+       </div>
+   </footer>
+    <script src="joinArambh.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

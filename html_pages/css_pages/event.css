@@ -17,6 +17,57 @@
 html{
   scroll-behavior: smooth;
 }
+/*Navbar starts */
+.main-nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: .01px .01px 5px .01px #cecece;
+  position: relative;
+}
+.navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap:30px;
+  margin-right: 60px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--myBlack);
+}
+.navbar{
+  flex-basis: 730px;
+}
+.main-nav .logo img{ 
+  width:40%;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.nav__item button{
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: var(--blue);
+  border: none;
+  color: beige;
+}
+
+.nav__item button:hover{
+  opacity: 0.9;
+  color:beige;
+}
+
+.navbar ul li a:hover{
+  color: var(--blue);
+}
+.nav-toggle{
+  display: none;
+}
+/* Navbar ends */
 /* upcoming event */
 .upcoming-section{
   display: flex;
@@ -26,7 +77,7 @@ html{
 }
 .upcoming-event{
   width: 390px;
-  min-height: 500px;
+  max-height: 500px;
   background: rgb(255, 255, 255);
   box-shadow: .01px .01px 5px .01px #cecece;
   overflow: hidden;
@@ -34,36 +85,6 @@ html{
   cursor: pointer;
   transition: 0.8s ease-in-out;
   border: 1px dashed transparent;
-}
-.upcoming-event:hover{
-  background: #f1f0f0;
-  border:1px dashed blue;
-}
-.upcoming-event img{
-  overflow: hidden;
-  transition: 0.8s ease-in-out;
-}
-.upcoming-event:hover img{
-  transform: scale(1.0456);
-}
-.upcoming-event-content{
-  padding: 25px;
-}
-.upcoming-event-content span{
-  display: block;
-  line-height: 1.5rem;
-  font-size: 14px;
-}
-.upcoming-event-content p{
-  font-size: 14px;
-  color: rgb(85, 85, 85);
-  font-weight: 400;
-}
-.upcoming-event-content h4{
-  font-weight: 600;
-  font-size: 18px;
-  color: black;
-  margin-top: 13px;
 }
 .btn a{
   text-decoration: none;
@@ -104,6 +125,7 @@ h1{
   }
   .event-content{
     width: 100%;
+    object-fit: cover;
     border-radius: 8px;
     box-shadow: .01px .01px 5px .01px #cecece;
     overflow: hidden;
@@ -111,8 +133,8 @@ h1{
   }
   .event-content img{
     width: 100%;
+    max-height: 350px;
     transition: 0.8s;
-    height: auto;
   }
   .event-content img:hover{
     transform: scale(1.05);
@@ -158,7 +180,101 @@ h1{
     color: rgb(255, 255, 255);
     background: var(--blue);
   }
+  /* footer */
+footer{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+  padding:10px;
+  color: #fff;
+  background-color: #011c39;
+}
+.footer > *{
+  flex: 1 100%;
+}
+.footer-left{
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+.footer-left img{
+  width: 13%;
+  cursor: pointer;
+  margin:10px 0 20px;
+}
+.footer-left a{
+  font-size: 1.675rem;
+  margin-top: 10px;
+  margin-bottom:20px;
+  margin-right: 15px;
+  color: #f0f0f0;
+}
+.socials a{
+  width: 400px;
+  height: 100px;
+  margin: 20px;
+}
+.footer-left a:hover{
+  opacity: .8;
+  font-size: 1.6rem;
+}
+.footer-right{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* footer end */
   /* media queries  */
+  /* for navbar */
+  @media screen and (max-width:991px) {
+    .main-nav.logo img{
+     width: 100%;
+     height: auto;
+    }
+    .home {
+     width:100%;
+     height: auto;
+    }
+    .home .row .col img{
+       display: none;
+       margin-bottom: 20px;
+    }
+     .nav-toggle{
+       display: block;
+       margin-right:25px;
+       font-size: 18px;
+     }
+     .navbar{
+         position: absolute;
+         background-color:rgb(245, 245, 245);
+         left: -100%;
+         top: 100%;
+         width:100%;
+         padding-block:30px;
+         transition: 0.4s ease-in-out;
+     }
+     .navbar.active{
+        left:0;
+     }
+      .navbar ul li a{
+         color:black;
+         font-weight: 600;
+      }
+     .navbar ul{
+         flex-direction: column;
+         margin-left: 50px;
+     }
+    }
+  /* for navbar end */
   @media only screen and (min-width:200px) and (max-width:767px){
     .upcoming-event img{
         width: 100%;
@@ -190,5 +306,13 @@ h1{
       .h11{
         font-size: 2.2rem;
         font-weight: 600;
+      }
+      .footer-left img{
+        width: 50%;
+        cursor: pointer;
+        margin:5px 0 15px;
+      }
+      .footer-left p{
+        text-align: inherit;
       }
   }

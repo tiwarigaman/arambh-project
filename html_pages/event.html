@@ -10,8 +10,32 @@
         <title>Events | Aarambh</title>
     </head>
     <body>
+      <!-- navbar starts -->
+      <nav>
+        <div class="main-nav" >
+          <!-- <a href="/arambh-project/index.html" class="logo"> 
+               <img src="arambh.png">
+             </a> -->
+             <div class="logo">
+              <img src="arambh.png" onclick="window.location.href='/arambh-project/index.html';" >
+             </div>
+          <div class="navbar" id="navbar">          
+            <ul>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="goals.html" class="nav__link">Goals</a></li>
+                <li class="nav__item"><a href="https://discord.gg/SNjR5HY5" class="nav__link">Community</a></li>
+                <li class="nav__item"><a href="event.html" class="nav__link">Events</a></li>
+                <li class="nav__item"><a href="mailto:arambh.community@gmail.com" class="nav__link">Contact Us</a></li>
+                <li class="nav__item"><a href="/arambh-project/html_pages/joinAarambh.html"><button>Join Aarambh<span>&#10230;</span></button></a></li>                       
+            </ul> 
+          </div> 
+          <a href="#" class="nav-toggle" id="nav-toggle">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+      <!-- navbar ends -->
         <h1 class="h11">Events</h1>
-
         <section class="event">
           <p class="rule">
             *To participate in our events, join the vibrant Aarambh community. Stay updated with event 
@@ -20,9 +44,9 @@
             and contact you via email to welcome you to Arambh.
           </p>
         </section>
-          <section class="event">
-            <h2>Recent Event</h2>
-            <!-- <p class="no">Not schedule yet...</p> -->
+          <!-- <section class="event">
+            <h2>Past Event</h2>
+            <p class="no">Not schedule yet...</p>
             <section class="upcoming-section">
               <div class="upcoming-event">
                 <div class="image">
@@ -37,7 +61,7 @@
                 </div>
               </div>
 
-            </section>
+            </section> -->
             <!-- <div class="eventin">
               <div class="event-content">
                 <img src="https://5.imimg.com/data5/ZH/SB/GC/SELLER-16593403/android-app-development-500x500.jpg">
@@ -65,6 +89,17 @@
           <section class="event">
             <h2>Past Event</h2>
             <div class="eventin">
+              <div class="event-content upcoming-event">
+                <img src="LOGIC LAB 23.1.0 (2) (1).png" width="410px" height="200px">
+                <p class="date">Workshop release | August 22,2023</p>
+                <p class="detail">We are excited to announce the upcoming 1st Year Coding Contest,
+                  hosted on Codeforces. Here is an opportunity to use your programming skills to create 
+                  programming knowledge.
+                  </p>
+                  <div class="btn">
+                    <a class="event-arrow" href="upcomingEvent.html">&rarr;</a>
+                  </div>
+              </div>
               <div class="event-content">
                 <img src="dsa_workshop.png">
                 <p class="date">Workshop release | june 17,2023</p>
@@ -85,7 +120,28 @@
               </div>
             </div>
           </section>
+           <!--Footer section-->
+        <footer class="footer">
+           <div class="footer-left">
+             <img src="arambh-white.png" alt="Aarambh-logo" onclick="window.location.href='/arambh-project/index.html';">
+              <p> Aarambh is a website that provides resources and tutorials informations for <br> computer science and programming 
+                 enthusiasts,assisting them in <br>their learning journey.
+               </p>
+               <div class="Socials">
+                 <a href="https://github.com/Project-Arambh" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                 <a href="https://www.linkedin.com/in/aarambh-the-gateway-to-coding/" target="_blank" class="ln"><i class="fab fa-linkedin"></i></a>
+                 </div>
+             </div>
+           </footer>
           <script>
+            //for navbar
+             const toggleButton= document.getElementById('nav-toggle');
+             const navLinks = document.getElementById('navbar');
+
+             toggleButton.addEventListener('click', () => {
+             navLinks.classList.toggle('active')
+             })
+             //navbar ends
               const eventHover = document.querySelector('.upcoming-event');
               const eventArrow = document.querySelector('.event-arrow');
               eventHover.addEventListener('mouseenter',()=>{

@@ -2,16 +2,39 @@
 <html lang="en">
 
 <head>
+    <script src="https://kit.fontawesome.com/c81f536b56.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Aarambh</title>
     <link rel="icon" type="image/x-icon" href="arambh-template.jpg">
     <link rel="stylesheet" href="css_pages/about.css">
 </head>
-
 <body>
-
-
+    <!-- navbar starts -->
+    <nav>
+        <div class="main-nav" >
+          <!-- <a href="/arambh-project/index.html" class="logo"> 
+               <img src="arambh.png">
+             </a> -->
+             <div class="logo">
+              <img src="arambh.png" onclick="window.location.href='/arambh-project/index.html';" >
+             </div>
+          <div class="navbar" id="navbar">          
+            <ul>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="goals.html" class="nav__link">Goals</a></li>
+                <li class="nav__item"><a href="https://discord.gg/SNjR5HY5" class="nav__link">Community</a></li>
+                <li class="nav__item"><a href="event.html" class="nav__link">Events</a></li>
+                <li class="nav__item"><a href="mailto:arambh.community@gmail.com" class="nav__link">Contact Us</a></li>
+                <li class="nav__item"><a href="/arambh-project/html_pages/joinAarambh.html"><button>Join Aarambh<span>&#10230;</span></button></a></li>                       
+            </ul> 
+          </div> 
+          <a href="#" class="nav-toggle" id="nav-toggle">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </a>
+        </div>
+    </nav>
+      <!-- navbar ends -->
     <section id="about">
         <h1>About The Aarambh</h1>
         <p>Aarambh's goal is to help students succeed in their academic and
@@ -121,7 +144,28 @@
         </div>
     </section>
 </div>
+ <!--Footer section-->
+ <footer class="footer">
+    <div class="footer-left">
+      <img src="arambh-white.png" alt="Aarambh-logo" onclick="window.location.href='/arambh-project/index.html';">
+       <p> Aarambh is a website that provides resources and tutorials informations for <br> computer science and programming 
+          enthusiasts,assisting them in <br>their learning journey.
+        </p>
+        <div class="Socials">
+          <a href="https://github.com/Project-Arambh" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aarambh-the-gateway-to-coding/" target="_blank" class="ln"><i class="fab fa-linkedin"></i></a>
+          </div>
+      </div>
+    </footer>
+    <script>
+           //for navbar
+        const toggleButton= document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('navbar');
 
+        toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active')
+         })
+        //navbar ends
+    </script>
 </body>
-
 </html>

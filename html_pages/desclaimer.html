@@ -1,61 +1,39 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+  <script src="https://kit.fontawesome.com/c81f536b56.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Sitemap</title>
   <link rel="icon" type="image/x-icon" href="arambh-template.jpg">
-  <style>
-    /* CSS styles go here */
-    *{
-      margin: 0;
-      padding: 0;
-    }
-    /*  */
-    body {
-      font-family: Arial, sans-serif;
-    }
-    html{
-  scroll-behavior: smooth;
-}
-    nav{
-    background-color: #fcfcfc;
-    width: 100%;
-    height: 70px;
-    box-shadow: .01px .01px 5px .01px #cecece;
-  }
-  .label img{ 
-    height: 60%;
-    width: 10%;
-    margin: 10px;
-    margin-left: 5%;
-  }
-    .contact{
-        padding: 5% 10% 20% 10%;
-    }
-    .contact-container{
-        background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(24, 98, 205, 0.25));
-        padding: 10%;
-        border-radius: 5px;
-        box-shadow: .01px .01px 5px .01px #cecece;
-    }
-    h1 {
-      color: #333;
-      text-align: center;
-    }
-    .pp{
-        margin-top: 20px;
-        /* word-break: break-all; */
-        letter-spacing: 1px;
-    }
-    
-  </style>
+  <link rel="stylesheet" href="css_pages/desclaimer.css">
 </head>
-<header>
-    <nav>
-        <label class="label"><a href="index.html"><img src="arambh.png"></a></label>
-    </nav>
-</header>
 <body>
+   <!-- navbar starts -->
+   <nav>
+    <div class="main-nav" >
+      <!-- <a href="/arambh-project/index.html" class="logo"> 
+           <img src="arambh.png">
+         </a> -->
+         <div class="logo">
+          <img src="arambh.png" onclick="window.location.href='/arambh-project/index.html';" >
+         </div>
+      <div class="navbar" id="navbar">          
+        <ul>
+            <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="goals.html" class="nav__link">Goals</a></li>
+            <li class="nav__item"><a href="https://discord.gg/SNjR5HY5" class="nav__link">Community</a></li>
+            <li class="nav__item"><a href="event.html" class="nav__link">Events</a></li>
+            <li class="nav__item"><a href="mailto:arambh.community@gmail.com" class="nav__link">Contact Us</a></li>
+            <li class="nav__item"><a href="/arambh-project/html_pages/joinAarambh.html"><button>Join Aarambh<span>&#10230;</span></button></a></li>                       
+        </ul> 
+      </div> 
+      <a href="#" class="nav-toggle" id="nav-toggle">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+      </a>
+    </div>
+</nav>
+  <!-- navbar ends -->
     <section class="contact">
         <div class="contact-container">
         <h1>Disclaimer</h1>
@@ -71,6 +49,29 @@ Please consult professionals or experts for specific advice related to your indi
         </p>
     </div>
 </section>
+<!--Footer section-->
+<footer class="footer">
+  <div class="footer-left">
+    <img src="arambh-white.png" alt="Aarambh-logo" onclick="window.location.href='/arambh-project/index.html';">
+     <p> Aarambh is a website that provides resources and tutorials informations for <br> computer science and programming 
+        enthusiasts,assisting them in <br>their learning journey.
+      </p>
+      <div class="Socials">
+        <a href="https://github.com/Project-Arambh" target="_blank" class="github"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/aarambh-the-gateway-to-coding/" target="_blank" class="ln"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+  </footer>
+  <script>
+         //for navbar
+      const toggleButton= document.getElementById('nav-toggle');
+      const navLinks = document.getElementById('navbar');
+
+      toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active')
+       })
+      //navbar ends
+  </script>
 </body>
 
 </html>

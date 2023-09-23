@@ -101,11 +101,11 @@
 
  
   @media screen and (max-width: 767px){
-     .home{
+    .home{
         width: 100%;
         margin-bottom: 20px;
      }
-     home .row .col img{
+     .home .row .col img{
         display: none;
      }
      .career-content{
@@ -144,6 +144,19 @@
 
     .developer .item{
         flex-basis: 45%;
+    }
+    .accordion button .icon {
+      position: absolute;
+      top: 18px;
+      right:0px;
+      left:200px;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+    }
+    .accordion-title{
+      font-size: 1rem;
     }
 
   }

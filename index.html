@@ -104,7 +104,90 @@
     </div>
 
   </section>
-
+ 
+   <!-- FAQ section -->
+  <section class="faq-section">
+    <h1 style="font-size: 1.8rem; text-align: center; padding-top: 20px; margin-bottom: 0px;">Frequently Asked Questions</h1>
+    <div class="container">
+      <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <span class="accordion-title">Q1: What is Aarambh?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                Aarambh is an online platform that aims to support programmers and computer
+                 science enthusiasts by providing a wide range of educational resources, 
+                 tutorials, articles, and coding challenges. Our goal is to help individuals enhance their programming skills and knowledge.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title">Q2: What resources does Aarambh offer?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                Aarambh offers a vast array of resources for programmers, including:
+                Comprehensive tutorials covering various programming languages, data structures, algorithms, and frameworks.
+                Practical coding examples and solutions to help you understand and apply concepts effectively.
+                Engaging coding challenges and quizzes to test your knowledge and problem-solving skills.
+                Articles on emerging technologies, industry trends, and best practices.
+                Discussion forums and a community platform to connect with fellow programmers and seek help.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <span class="accordion-title">Q3: Is Aarambh free to use?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                Aarambh is an online platform that aims to support programmers and computer science 
+                enthusiasts by providing a wide range of educational resources, tutorials, articles, 
+                and coding challenges. 
+                Our goal is to help individuals enhance their programming skills and knowledge.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <span class="accordion-title">Q4: Can I contribute to Aarambh?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                Yes, Aarambh is completely free to use. We believe in providing accessible
+                 programming education to all individuals regardless of their financial 
+                 constraints. All the content and resources on our platform can be accessed
+                  without any cost.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">Q5: How can I contact the Aarambh team?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+                If you have any questions, feedback, or suggestions, we're here to assist you.
+                You can reach out to our support team by sending an email to @aarambh.com. We 
+                value your input and will do our best to respond to your queries promptly.
+                Remember, Aarambh is designed to be a platform that supports your
+                programming journey. Whether you're a beginner or an experienced 
+                programmer, we're here to provide you with the resources you need to
+                grow your skills and excel in the world of programming
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ section ends -->
   <section class="career">
     <h2>Careers</h2>
     <div class="career-container">
@@ -231,12 +314,25 @@
 
    <!-- script for hamberger button-->
    <script>
+          // for faq 
+          const items = document.querySelectorAll('.accordion button');
+        function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
+        for (i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+       }
+       if (itemToggle == 'false') {
+       this.setAttribute('aria-expanded', 'true');
+       }
+       }
+       items.forEach((item) => item.addEventListener('click', toggleAccordion));
+       // faq ends
     const toggleButton= document.getElementById('nav-toggle');
     const navLinks = document.getElementById('navbar');
 
     toggleButton.addEventListener('click', () => {
       navLinks.classList.toggle('active')
-    })
+    });
 
     const arrowBtn = document.querySelector('.arrow-btn');
     arrowBtn.addEventListener('mouseenter',()=>{
@@ -251,7 +347,6 @@
       arrowBtn.style.color="";
       arrowBtn.style.fontSize="";
     });
-
   </script>
 </body>
 </html>

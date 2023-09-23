@@ -160,7 +160,7 @@
     }
     .container {
       max-width:100%;
-      padding:30px;
+      padding:35px;
     }
     .accordion button[aria-expanded='true'] + .accordion-content {
       max-height: 10em;
@@ -235,7 +235,7 @@
 }
 @media screen and (max-width:325px) {
   .accordion button .icon {
-    left:240px;
+    left:230px;
   }
 }
 @media screen and (min-width: 700px){

@@ -149,7 +149,7 @@
       position: absolute;
       top: 18px;
       right:0px;
-      left:200px;
+      left:280px;
       width: 22px;
       height: 22px;
       border: 1px solid;
@@ -157,6 +157,16 @@
     }
     .accordion-title{
       font-size: 1rem;
+    }
+    .container {
+      max-width:100%;
+      padding:30px;
+    }
+    .accordion button[aria-expanded='true'] + .accordion-content {
+      max-height: 10em;
+    }
+    .accordion .accordion-content {
+      overflow:scroll;
     }
 
   }
@@ -219,6 +229,14 @@
        .test-content p{
         font-size: 1rem;
        }
+       .accordion button .icon {
+        left:300px;
+      }
+}
+@media screen and (max-width:325px) {
+  .accordion button .icon {
+    left:240px;
+  }
 }
 @media screen and (min-width: 700px){
     .footer-right > *{

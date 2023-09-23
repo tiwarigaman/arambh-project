@@ -300,8 +300,7 @@ header .event{
   box-sizing: border-box;
 }
  .faq-section{
-  background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(206, 216, 228, 0.25));
-  box-shadow: .01px .01px 5px .01px #cecece;
+  background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(221, 227, 236, 0.25));
  }
 /* body {
   margin: 0;
@@ -316,7 +315,11 @@ header .event{
 .container {
   margin: 0 auto;
   padding: 4rem;
-  max-width: 48rem;
+  max-width: 75rem;
+  margin-top: 30px;
+  background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(91, 135, 188, 0.25));
+  box-shadow: .01px .01px 5px .01px #cecece;
+  border-radius: 3px;
 }
 
 .accordion .accordion-item {
@@ -398,14 +401,14 @@ header .event{
 }
 .accordion button[aria-expanded='true'] + .accordion-content {
   opacity: 1;
-  max-height: 9em;
+  max-height: 15em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
 }
 .accordion .accordion-content {
   opacity: 0;
   max-height: 0;
-  overflow: scroll;
+  overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
 }

@@ -83,6 +83,9 @@ h1 {
 h1 span{
     color:#1862CD;
 }
+ a {
+  text-decoration: none;
+}
 form {
     display: flex;
     flex-direction: column;
@@ -219,12 +222,15 @@ footer{
     }
     @media screen and (max-width:600px){
         .container{
-            max-width:290px;
-            margin: 60px auto 30px;
+            max-width:300px;
+            margin: 55px auto 30px;
         }
         .footer-left img{
             width: 50%;
             cursor: pointer;
-            margin:10px 0 20px;
+            margin:5px 0 15px;
+          }
+          .footer-left p{
+            text-align: inherit;
           }
     }

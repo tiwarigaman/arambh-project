@@ -22,6 +22,6 @@
                     + "<br>phone number: "+ document.getElementById("phone").value
                     + "<br>skills: "+ document.getElementById("skills").value
            }).then(
-          message => alert("your message has sent successfully")
+          message => alert("your message has been sent successfully")
           );
          }

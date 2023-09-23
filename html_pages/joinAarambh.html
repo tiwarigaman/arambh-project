@@ -12,11 +12,11 @@
     <!-- nav bar -->
     <nav>
         <div class="main-nav" >
-          <!-- <a href="index.html" class="logo"> 
+          <!-- <a href="/arambh-project/index.html" class="logo"> 
                <img src="arambh.png">
              </a> -->
              <div class="logo">
-              <img src="arambh.png" onclick="window.location.href='index.html';" >
+              <img src="arambh.png" onclick="window.location.href='/arambh-project/index.html';" >
              </div>
           <div class="navbar" id="navbar">          
             <ul>
@@ -25,7 +25,7 @@
                 <li class="nav__item"><a href="https://discord.gg/SNjR5HY5" class="nav__link">Community</a></li>
                 <li class="nav__item"><a href="event.html" class="nav__link">Events</a></li>
                 <li class="nav__item"><a href="mailto:arambh.community@gmail.com" class="nav__link">Contact Us</a></li>
-                <li class="nav__item"><a href="joinForm.html"><button>Join Aarambh<span>&#10230;</span></button></a></li>                       
+                <!-- <li class="nav__item"><a href="/arambh-project/html_pages/joinAarambh.html"><button>Join Aarambh<span>&#10230;</span></button></a></li>                        -->
             </ul> 
           </div> 
           <a href="#" class="nav-toggle" id="nav-toggle">
@@ -36,7 +36,7 @@
     <!-- nav bar ends -->
 
     <div class="container">
-        <h1>Join <span>Aarambh</span></h1>
+        <h1>Join <a href="/arambh-project/index.html"><span>Aarambh</span></a></h1>
         <form id="joinForm" onsubmit="sendEmail(); reset(); return false";>
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" name="fullName" required placeholder="your answer">
@@ -67,9 +67,9 @@
     <!--Footer section-->
   <footer class="footer">
       <div class="footer-left">
-        <img src="arambh-white.png" alt="">
-         <p> Aarambh is a website that provides resources and tutorials <br> informations for computer science and programming <br>
-            enthusiasts,assisting them in their learning journey.
+        <img src="arambh-white.png" alt="Aarambh-logo" onclick="window.location.href='/arambh-project/index.html';">
+         <p> Aarambh is a website that provides resources and tutorials informations for <br> computer science and programming 
+            enthusiasts,assisting them in <br>their learning journey.
          </p>
          <div class="Socials">
           <a href="https://github.com/Project-Arambh" target="_blank" class="github"><i class="fab fa-github"></i></a>

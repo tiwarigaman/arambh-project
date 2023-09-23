@@ -222,7 +222,7 @@ footer{
     }
     @media screen and (max-width:600px){
         .container{
-            max-width:300px;
+            max-width:330px;
             margin: 55px auto 30px;
         }
         .footer-left img{

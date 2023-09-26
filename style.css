@@ -317,6 +317,7 @@ header .event{
   padding: 4rem;
   max-width: 75rem;
   margin-top: 30px;
+  margin-bottom: 30px;
   background-image: linear-gradient(to bottom right, rgb(255, 254, 242),rgba(91, 135, 188, 0.25));
   box-shadow: .01px .01px 5px .01px #cecece;
   border-radius: 3px;

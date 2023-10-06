@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/c81f536b56.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past Event</title>
+    <link rel="stylesheet" href="./css_pages/upcomingEvent.css">
+</head>
+<body>
+    <!-- navbar starts -->
+    <nav>
+        <div class="main-nav" >
+          <!-- <a href="/arambh-project/index.html" class="logo"> 
+               <img src="arambh.png">
+             </a> -->
+             <div class="logo">
+              <img src="arambh.png" onclick="window.location.href='/arambh-project/index.html';" >
+             </div>
+          <div class="navbar" id="navbar">          
+            <ul>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="goals.html" class="nav__link">Goals</a></li>
+                <li class="nav__item"><a href="https://discord.gg/SNjR5HY5" class="nav__link">Community</a></li>
+                <li class="nav__item"><a href="event.html" class="nav__link">Events</a></li>
+                <li class="nav__item"><a href="mailto:arambh.community@gmail.com" class="nav__link">Contact Us</a></li>
+                <li class="nav__item"><a href="/arambh-project/html_pages/joinAarambh.html"><button>Join Aarambh<span>&#10230;</span></button></a></li>                       
+            </ul> 
+          </div> 
+          <a href="#" class="nav-toggle" id="nav-toggle">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </a>
+        </div>
+    </nav>
+      <!-- navbar ends -->
+    <section>
+        <div class="mainEvent">
+             <h1>Upcoming Event</h1>
+             <div class="hero-image">
+                 <img src="github-event.jpg" alt="event-image">
+             </div>
+             <div class="event-greetings">
+                <h3>Greetings, Learn Git and Github</h3>
+                <p>
+                  We are excited to announce the upcoming Git & github event, <br>hosted on Aarambh.
+                  This is your chance to Learn these technologies 
+               </p>
+             </div>  
+        </div>
+        <div class="rules">
+            <h2>Why learn Git and Github</h2>
+            <div class="left-rules">
+                <ol>
+                    <li>Git is a powerful distributed version control system that helps you track changes in your codebase over time</li>
+                    <li>GitHub is a platform that uses Git for version control and enhances collaboration. It enables multiple developers to work on the same project simultaneously, facilitating seamless teamwork.</li>
+                    <li>
+                        Make sure mobile/laptop is fully charged. Power bank for mobile or 
+                        UPS/Inverterbr <br> for laptop/desktop should be arranged for uninterrupted 
+                        power supply.
+                    </li>
+                    <li>
+                        Proficiency in Git and GitHub is a valuable skill for software developers. Including these skills on your resume and showcasing projects on your GitHub profile demonstrates your ability to work effectively in a team and manage code professionally.
+                    </li>
+                    <li>GitHub is a hub for open-source projects. Learning Git and GitHub allows you to contribute to open-source software, gain experience, and build a network within the developer community.</li>
+                    <li>Git repositories provide a secure backup of your code. If your local development environment crashes or is lost, you can easily recover your work from the remote repository on GitHub.</li>
+                    <li>Many tech companies and organizations use Git and GitHub for their development processes. Proficiency in these tools can open up job opportunities and career advancement in the software development field.</li>
+                    <li>learning Git and GitHub is not only essential for efficient and collaborative software development but also provides a valuable skill set that can enhance your career prospects and make you a more effective and organized developer.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="event-content">
+            <div class="left-content event-box">
+               <h3>Event Details:</h3>
+               <ul>
+                  <li>Date: [14 October]</li>
+                  <li>Time: [4:00pm-5:30pm]</li>
+                </ul>
+            </div>
+            <!-- <div class="right-content event-box">
+                <h3>Steps to join contest:</h3>
+                <ul>
+                   <li>must have a Codeforces account</li>
+                   <li>To create acount <a  href="#">Closed</a></li>
+                   <li>After registering</li>
+                   <li>Fill out the form <a href="#">Closed</a></li>
+                </ul>
+            </div> -->
+         </div>
+    </section>
+     <!--Footer section-->
+ <footer class="footer">
+    <div class="footer-left">
+      <img src="arambh-white.png" alt="Aarambh-logo" onclick="window.location.href='/arambh-project/index.html';">
+       <p> Aarambh is a website that provides resources and tutorials informations for <br> computer science and programming 
+          enthusiasts,assisting them in <br>their learning journey.
+        </p>
+        <div class="Socials">
+          <a href="https://github.com/Project-Arambh" target="_blank" class="github"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aarambh-the-gateway-to-coding/" target="_blank" class="ln"><i class="fab fa-linkedin"></i></a>
+          </div>
+      </div>
+    </footer>
+    <script>
+        const closedBtn = document.querySelector('.closed-btn');
+        closedBtn.addEventListener('click',()=>{
+            alert("sorry session has ended");
+        });
+         //for navbar
+         const toggleButton= document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('navbar');
+
+        toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active')
+         })
+        //navbar ends
+    </script>
+</body>
+</html>

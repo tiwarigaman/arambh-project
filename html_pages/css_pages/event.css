@@ -36,6 +36,23 @@ html{
   transition: 0.8s ease-in-out;
   border: 1px dashed transparent;
 }
+.upcoming-event img{
+  width: 100%;
+  max-height: 350px;
+  transition:  0.8s;
+}
+.upcoming-event img:hover{
+  transform: scale(1.05);
+}
+.upcoming-event-content p{
+  font-size: 14px;
+    color: rgb(85, 85, 85);
+    text-align: left;
+    margin: 20px;
+}
+.upcoming-event-content h4{
+  margin: 50px 20px;
+}
 .btn a{
   text-decoration: none;
   color:red;

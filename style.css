@@ -294,6 +294,10 @@ header .event{
   font-weight: 400;
   flex-wrap: wrap;
 }
+/* ebtn */
+#ebtn:hover{
+   color:#1862CD;
+}
 /* faq starts here */
 *::before,
 *::after {

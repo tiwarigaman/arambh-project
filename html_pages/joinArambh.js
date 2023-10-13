@@ -24,6 +24,15 @@
                     + "<br>phone number: "+ document.getElementById("phone").value
                     + "<br>skills: "+ document.getElementById("skills").value
            }).then(
-          message => alert("your message has been sent successfully")
+            message => {
+              var messageElement = document.getElementById("message");
+              if (message === "OK") {
+                  messageElement.style.color = "green";
+                  messageElement.textContent = "Your message has been sent successfully to Aarambh Community.";
+              } else {
+                  messageElement.style.color = "red";
+                  messageElement.textContent = "Something went wrong. Please try again later.";
+              }
+          }
           );
       }
